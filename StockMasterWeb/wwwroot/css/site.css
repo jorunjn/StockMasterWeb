@@ -1,0 +1,85 @@
+/* Базовая настройка шрифта и размеров */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: url('/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #f8f9fa; /* fallback */
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Flex-разметка для вытягивания футера вниз */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Контент заполняет доступную высоту */
+main {
+    flex: 1;
+}
+
+/* Футер фиксирован снизу */
+footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 1rem;
+    background-color: #1f2327;
+    color: #fff;
+}
+
+/* Навигационная панель */
+.navbar {
+    background-color: #1f2327;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+/* Фокус и стилизация элементов */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+/* Карточки дашборда */
+.dashboard-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: white;
+    border-radius: 0.75rem;
+}
+
+    .dashboard-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+/* Hover-анимация иконок */
+.hover-zoom:hover .fs-1 {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+/* Центровка страницы авторизации */
+.vh-100 {
+    height: 100vh;
+}
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

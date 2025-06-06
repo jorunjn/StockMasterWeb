@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.35821.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockMasterWeb", "StockMasterWeb\StockMasterWeb.csproj", "{3726F47E-1F4F-49D4-9DE6-8FD48C87D59B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3726F47E-1F4F-49D4-9DE6-8FD48C87D59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3726F47E-1F4F-49D4-9DE6-8FD48C87D59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3726F47E-1F4F-49D4-9DE6-8FD48C87D59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3726F47E-1F4F-49D4-9DE6-8FD48C87D59B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C910B69-3CA8-46F5-AFB1-61A616594B45}
+	EndGlobalSection
+EndGlobal

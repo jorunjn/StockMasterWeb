@@ -1,0 +1,110 @@
+﻿@{
+    ViewData["Title"] = "Добро пожаловать в StockMaster";
+}
+
+<section class="dashboard-header text-center my-4">
+    <h1 class="display-5 fw-bold">📦 Добро пожаловать в StockMaster</h1>
+    <p class="lead" style="color: #5a5a5a;">Выберите раздел для работы со складом</p>
+</section>
+
+<div class="container">
+    <div class="row g-4 justify-content-center">
+
+        @* Менеджер *@
+        @if (User.IsInRole("Менеджер") || User.IsInRole("Администратор"))
+        {
+            <div class="col-md-4">
+                <div class="dashboard-card h-100 p-4 shadow-sm text-center border border-primary rounded-4 hover-zoom">
+                    <div class="fs-1 mb-2">💼</div>
+                    <h4 class="mb-2">Продукты</h4>
+                    <p class="text-muted">Добавляйте, редактируйте или удаляйте товарные позиции</p>
+                    <a asp-controller="Products" asp-action="Index" class="btn btn-primary mt-2 w-100">Перейти</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="dashboard-card h-100 p-4 shadow-sm text-center border border-success rounded-4 hover-zoom">
+                    <div class="fs-1 mb-2">📄</div>
+                    <h4 class="mb-2">Заказы</h4>
+                    <p class="text-muted">Управление заказами клиентов</p>
+                    <a asp-controller="Orders" asp-action="Index" class="btn btn-success mt-2 w-100">Перейти</a>
+                </div>
+            </div>
+        }
+
+        @* Поставщик *@
+        @if (User.IsInRole("Поставщик") || User.IsInRole("Администратор"))
+        {
+            <div class="col-md-4">
+                <div class="dashboard-card h-100 p-4 shadow-sm text-center border border-secondary rounded-4 hover-zoom">
+                    <div class="fs-1 mb-2">🍶</div>
+                    <h4 class="mb-2">Материалы</h4>
+                    <p class="text-muted">Просмотр и управление материалами</p>
+                    <a asp-controller="Materials" asp-action="Index" class="btn btn-secondary mt-2 w-100">Перейти</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="dashboard-card h-100 p-4 shadow-sm text-center border border-info rounded-4 hover-zoom">
+                    <div class="fs-1 mb-2">🏢</div>
+                    <h4 class="mb-2">Поставщики</h4>
+                    <p class="text-muted">Управление поставщиками</p>
+                    <a asp-controller="Suppliers" asp-action="Index" class="btn btn-info mt-2 w-100">Перейти</a>
+                </div>
+            </div>
+        }
+
+        @* Заведующий складом *@
+        @if (User.IsInRole("Заведующий складом") || User.IsInRole("Администратор"))
+        {
+            <div class="col-md-4">
+                <div class="dashboard-card h-100 p-4 shadow-sm text-center border border-warning rounded-4 hover-zoom">
+                    <div class="fs-1 mb-2">📦</div>
+                    <h4 class="mb-2">Склад</h4>
+                    <p class="text-muted">Просмотр и управление остатками на складе</p>
+                    <a asp-controller="WarehouseItems" asp-action="Index" class="btn btn-warning mt-2 w-100">Перейти</a>
+                </div>
+            </div>
+        }
+
+        @* Оператор сборки *@
+        @if (User.IsInRole("Оператор сборки") || User.IsInRole("Администратор"))
+        {
+            <div class="col-md-4">
+                <div class="dashboard-card h-100 p-4 shadow-sm text-center border border-info rounded-4 hover-zoom">
+                    <div class="fs-1 mb-2">📋</div>
+                    <h4 class="mb-2">Позиции заказов</h4>
+                    <p class="text-muted">Сборка заказов и управление их содержимым</p>
+                    <a asp-controller="OrderItems" asp-action="Index" class="btn btn-info mt-2 w-100">Перейти</a>
+                </div>
+            </div>
+        }
+
+        @* Финансовый аналитик *@
+        @if (User.IsInRole("Финансовый аналитик") || User.IsInRole("Администратор"))
+        {
+            <div class="col-md-4">
+                <div class="dashboard-card h-100 p-4 shadow-sm text-center border border-dark rounded-4 hover-zoom">
+                    <div class="fs-1 mb-2">📊</div>
+                    <h4 class="mb-2">Отчёты</h4>
+                    <p class="text-muted">Анализ и отчётность по заказам</p>
+                    <a asp-controller="Orders" asp-action="Report" class="btn btn-dark mt-2 w-100">Смотреть отчёты</a>
+                </div>
+            </div>
+        }
+
+        @* Администратор — отдельно блок для управления пользователями *@
+        @if (User.IsInRole("Администратор"))
+        {
+            <div class="col-md-4">
+                <div class="dashboard-card h-100 p-4 shadow-sm text-center border border-danger rounded-4 hover-zoom">
+                    <div class="fs-1 mb-2">👥</div>
+                    <h4 class="mb-2">Пользователи</h4>
+                    <p class="text-muted">Управление доступом и ролями пользователей</p>
+                    <a asp-controller="Users1" asp-action="Index" class="btn btn-danger mt-2 w-100">Перейти</a>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>

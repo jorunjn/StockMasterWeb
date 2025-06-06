@@ -1,0 +1,36 @@
+﻿@model IEnumerable<StockMasterWeb.Models.OrderReportViewModel>
+
+@{
+    ViewData["Title"] = "Отчёт по заказам";
+}
+
+<h2>📑 Отчёт по заказам</h2>
+
+<a class="btn btn-success mb-3" asp-action="ExportToExcel">⬇️ Экспорт в Excel</a>
+
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Номер заказа</th>
+            <th>Клиент</th>
+            <th>Дата</th>
+            <th>Статус</th>
+            <th>Позиций</th>
+            <th>Сумма (BYN)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderId</td>
+                <td>@order.ClientName</td>
+                <td>@order.OrderDate.ToShortDateString()</td>
+                <td>@order.Status</td>
+                <td>@order.TotalItems</td>
+                <td>@order.TotalAmount.ToString("F2")</td>
+            </tr>
+        }
+    </tbody>
+</table>

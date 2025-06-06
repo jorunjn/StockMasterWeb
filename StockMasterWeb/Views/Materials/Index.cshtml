@@ -1,0 +1,63 @@
+﻿@model IEnumerable<StockMasterWeb.Models.Material>
+
+@{
+    ViewData["Title"] = "Материалы";
+}
+
+<h2>📦 Материалы</h2>
+
+<!-- 🔍 Форма фильтрации -->
+<form asp-action="Index" method="get" class="row g-3 align-items-end mb-4">
+    <div class="col-md-5">
+        <label for="supplierId" class="form-label">Поставщик</label>
+        <select name="supplierId" class="form-select" asp-items="ViewBag.Suppliers">
+            <option value="">🏢 Все поставщики</option>
+        </select>
+    </div>
+
+    <div class="col-md-4">
+        <label for="stockThreshold" class="form-label">Остаток меньше</label>
+        <input type="number" name="stockThreshold" class="form-control"
+               value="@ViewData["StockThreshold"]" placeholder="например, 100" />
+    </div>
+
+    <div class="col-md-3">
+        <button type="submit" class="btn btn-primary w-100">🔍 Применить</button>
+    </div>
+</form>
+
+<!-- 📥 Кнопка экспорта -->
+<a class="btn btn-success mb-3" asp-action="ExportToExcel">⬇️ Экспорт в Excel</a>
+
+<!-- ➕ Создание -->
+<p>
+    <a class="btn btn-outline-success" asp-action="Create">➕ Добавить материал</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Количество</th>
+            <th>Ед. изм.</th>
+            <th>Поставщик</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Quantity</td>
+                <td>@item.Unit</td>
+                <td>@item.Supplier?.Name</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">✏️</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">🔍</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">🗑️</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

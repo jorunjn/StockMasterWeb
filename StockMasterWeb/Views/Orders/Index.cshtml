@@ -1,0 +1,59 @@
+﻿@model IEnumerable<StockMasterWeb.Models.Order>
+
+@{
+    ViewData["Title"] = "Заказы";
+}
+
+<h2>📋 Заказы</h2>
+
+<form asp-action="Index" method="get" class="row g-2 mb-4">
+    <div class="col-md-4">
+        <select name="userId" class="form-select" asp-items="ViewBag.UserId">
+            <option value="">👤 Все клиенты</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <select name="status" class="form-select">
+            <option value="">📦 Все статусы</option>
+            @foreach (var s in (List<string>)ViewData["Statuses"])
+            {
+                <option value="@s" selected="@(s == (ViewData["Status"]?.ToString() ?? "") ? "selected" : null)">
+                    @s
+                </option>
+            }
+        </select>
+    </div>
+    <div class="col-md-4">
+        <button type="submit" class="btn btn-primary w-100">🔍 Фильтр</button>
+    </div>
+</form>
+
+<p>
+    <a class="btn btn-success" asp-action="Create">➕ Создать заказ</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Дата</th>
+            <th>Статус</th>
+            <th>Клиент</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.OrderDate.ToShortDateString()</td>
+                <td>@item.Status</td>
+                <td>@item.User.Username</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">✏️</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">🔍</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">🗑️</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

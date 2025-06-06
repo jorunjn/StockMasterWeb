@@ -1,0 +1,35 @@
+﻿@model IEnumerable<StockMasterWeb.Models.User>
+
+@{
+    ViewData["Title"] = "Пользователи";
+}
+
+<h2>👥 Пользователи</h2>
+
+<p>
+    <a class="btn btn-success" asp-action="Create">➕ Добавить пользователя</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Логин</th>
+            <th>Роль</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Username</td>
+                <td>@user.Role?.Name</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@user.Id">✏️</a> |
+                    <a asp-action="Details" asp-route-id="@user.Id">🔍</a> |
+                    <a asp-action="Delete" asp-route-id="@user.Id">🗑️</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
