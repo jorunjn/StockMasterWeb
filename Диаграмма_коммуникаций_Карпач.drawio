@@ -1,0 +1,112 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2">
+  <diagram name="Страница — 1" id="zcFf4VPZttUS6591rmjO">
+    <mxGraphModel dx="2436" dy="1015" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QKfmMPg8BV2pelgd5ERt-1" value="1. Войти в систему" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="QKfmMPg8BV2pelgd5ERt-3" edge="1">
+          <mxGeometry x="-0.172" y="20" relative="1" as="geometry">
+            <mxPoint x="360" y="540" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QKfmMPg8BV2pelgd5ERt-3" value="Пользователь" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="159" y="510" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KI-LPFi-Vr7Q0GOo2Mp0-1" target="KI-LPFi-Vr7Q0GOo2Mp0-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-23" value="2. Перейти в раздел &quot;отгрузки&quot;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KI-LPFi-Vr7Q0GOo2Mp0-10">
+          <mxGeometry x="0.0191" relative="1" as="geometry">
+            <mxPoint x="-6" y="-50" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-1" value="Открыть приложение" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="510" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KI-LPFi-Vr7Q0GOo2Mp0-2" target="KI-LPFi-Vr7Q0GOo2Mp0-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-24" value="3. Открытие формы&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KI-LPFi-Vr7Q0GOo2Mp0-11">
+          <mxGeometry x="-0.4573" y="-1" relative="1" as="geometry">
+            <mxPoint x="25" y="-51" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-2" value="Страница создания отгрузки" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="510" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KI-LPFi-Vr7Q0GOo2Mp0-3" target="KI-LPFi-Vr7Q0GOo2Mp0-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-25" value="4. Ввод информации" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KI-LPFi-Vr7Q0GOo2Mp0-12">
+          <mxGeometry x="-0.2132" y="-2" relative="1" as="geometry">
+            <mxPoint x="72" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-3" value="Форма ввода отгрузки" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="510" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KI-LPFi-Vr7Q0GOo2Mp0-4" target="KI-LPFi-Vr7Q0GOo2Mp0-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-28" value="5.Передача данных" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KI-LPFi-Vr7Q0GOo2Mp0-13">
+          <mxGeometry x="0.2621" y="-2" relative="1" as="geometry">
+            <mxPoint x="9" y="-38" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-4" value="Отправка данных на сервер" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="680" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KI-LPFi-Vr7Q0GOo2Mp0-5" target="KI-LPFi-Vr7Q0GOo2Mp0-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-27" value="6.Проверка остатков" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KI-LPFi-Vr7Q0GOo2Mp0-14">
+          <mxGeometry x="-0.2525" relative="1" as="geometry">
+            <mxPoint x="-21" y="-40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-5" value="Сервис отгрузки" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="680" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KI-LPFi-Vr7Q0GOo2Mp0-6" target="KI-LPFi-Vr7Q0GOo2Mp0-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-29" value="7. Обновление остатков" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KI-LPFi-Vr7Q0GOo2Mp0-15">
+          <mxGeometry x="-0.3851" y="1" relative="1" as="geometry">
+            <mxPoint x="-30" y="-41" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-6" value="Сервис учёта остатков" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="680" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="KI-LPFi-Vr7Q0GOo2Mp0-7" target="KI-LPFi-Vr7Q0GOo2Mp0-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-31" value="8. Данные успешно записаны" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KI-LPFi-Vr7Q0GOo2Mp0-17">
+          <mxGeometry x="-0.1998" y="-1" relative="1" as="geometry">
+            <mxPoint x="22" y="-39" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-7" value="База данных" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="680" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KI-LPFi-Vr7Q0GOo2Mp0-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-60" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-35" value="9.Сообщение интерфеса&amp;nbsp;&lt;br&gt;&quot;оформление подтверждено&quot;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KI-LPFi-Vr7Q0GOo2Mp0-34">
+          <mxGeometry x="-0.0247" y="2" relative="1" as="geometry">
+            <mxPoint x="3" y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KI-LPFi-Vr7Q0GOo2Mp0-8" value="Подтверждение оформления" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="570" width="140" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
